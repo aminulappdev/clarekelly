@@ -1,5 +1,6 @@
 import 'package:clarekelly/app/routes/app_routes.dart';
 import 'package:clarekelly/app/theme/elevated_theme.dart';
+import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -22,7 +23,7 @@ class ClareKellyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'ClareKelly',
           theme: ThemeData(
-            scaffoldBackgroundColor: Color(0xffF3F3F3),
+            scaffoldBackgroundColor: AppColors.primaryBackgroundColor,
             elevatedButtonTheme: ElevatedTheme.elevatedButtonThemeData(), 
             useMaterial3: true,
           ),

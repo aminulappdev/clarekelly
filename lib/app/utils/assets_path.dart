@@ -4,4 +4,6 @@ class AssetsPath {
   static const String onBoardingPage2 = '$baseUrl/onBoardingPage2.svg';
   static const String onBoardingPage3 = '$baseUrl/onBoardingPage3.svg';
   static const String personSvg = '$baseUrl/person.svg';
+  static const String footballWomen = '$baseUrl/footballWomen.svg';
+  static const String imagefootballKid = '$baseUrl/imagefootballKid.jpg';
 }

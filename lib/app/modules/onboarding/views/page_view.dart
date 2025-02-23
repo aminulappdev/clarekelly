@@ -31,19 +31,6 @@ class OnboardingPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          // Container(
-          //   height: 30.h,
-          //   width: 60.w,
-          //   decoration: BoxDecoration(
-          //     color: Colors.transparent,
-          //     border: Border.all(color: Colors.black),
-          //     borderRadius: BorderRadius.circular(10),
-          //   ),
-          //   child: Center(
-          //     child: Text('Skip'),
-          //   ),
-          // ),
-
           Align(
             alignment: Alignment.centerRight,
             child: GestureDetector(
