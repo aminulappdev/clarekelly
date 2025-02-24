@@ -3,14 +3,13 @@ import 'package:clarekelly/app/modules/events/views/event_datails_screen.dart';
 import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:clarekelly/app/utils/assets_path.dart';
 import 'package:clarekelly/app/utils/responsive_size.dart';
-import 'package:clarekelly/app/widgets/custom_comment_field_widget.dart';
 import 'package:clarekelly/app/widgets/custom_image_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class EventItemCard extends StatelessWidget {
-  const EventItemCard({
+class HalfEventItemCard extends StatelessWidget {
+  const HalfEventItemCard({
     super.key, 
   });
 
@@ -21,8 +20,8 @@ class EventItemCard extends StatelessWidget {
         Navigator.pushNamed(context, EventDatailsScreen.routeName);
       },
       child: Container(
-        height: 338,
-        width: 175,
+        height: 300.h,
+        width: 175.w,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.r),
           color: Colors.white,
@@ -78,45 +77,7 @@ class EventItemCard extends StatelessWidget {
                   ),
                 ],
               ),
-              heightBox8,
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  CircleAvatar(
-                      backgroundColor: Colors.green,
-                      radius: 10,
-                      child: Icon(
-                        Icons.check,
-                        color: Colors.white,
-                        size: 14,
-                      )),
-                  Text(
-                    'Going',
-                    style: GoogleFonts.outfit(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xff5D5D5D)),
-                  ),
-                  widthBox4,
-                  CircleAvatar(
-                      backgroundColor: Colors.red,
-                      radius: 10,
-                      child: Icon(
-                        Icons.close,
-                        color: Colors.white,
-                        size: 14,
-                      )),
-                  Text(
-                    'Not intersted',
-                    style: GoogleFonts.outfit(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xff5D5D5D)),
-                  ),
-                ],
-              ),
-              heightBox4,
-              CommentInputField(cHeight: 44,)
+             
             ],
           ),
         ),

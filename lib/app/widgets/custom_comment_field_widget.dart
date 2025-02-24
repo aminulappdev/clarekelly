@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CommentInputField extends StatelessWidget {
-  const CommentInputField({super.key});
-
+  final double cHeight;
+  const CommentInputField({super.key, required this.cHeight});
+   
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 0),
       child: Container(
-        height: 44.h,
+        height: cHeight.h,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(30.r),

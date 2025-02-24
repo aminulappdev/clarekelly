@@ -6,4 +6,5 @@ class AssetsPath {
   static const String personSvg = '$baseUrl/person.svg';
   static const String footballWomen = '$baseUrl/footballWomen.svg';
   static const String imagefootballKid = '$baseUrl/imagefootballKid.jpg';
+  static const String profileEventAlt = '$baseUrl/profileEventAlt.png';
 }

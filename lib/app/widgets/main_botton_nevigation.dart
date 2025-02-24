@@ -1,5 +1,6 @@
+import 'package:clarekelly/app/modules/events/views/event_bar.dart';
 import 'package:clarekelly/app/modules/homepage/views/home_screen.dart';
-import 'package:clarekelly/app/modules/homepage/views/up_comming_event_screen.dart';
+import 'package:clarekelly/app/modules/profile/views/my_progile.dart';
 import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,9 +19,9 @@ class _MainButtonNavbarScreenState extends State<MainButtonNavbarScreen> {
 
   List<Widget> screens = const [
     HomeScreen(),
-    UpCommingEventScreen(),
+    EventBarScreen(),
     HomeScreen(),
-    HomeScreen(),
+    MyProfileScreen(),
   ];
 
   @override

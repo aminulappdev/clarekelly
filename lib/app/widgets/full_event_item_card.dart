@@ -3,6 +3,7 @@ import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:clarekelly/app/utils/assets_path.dart';
 import 'package:clarekelly/app/utils/responsive_size.dart';
 import 'package:clarekelly/app/widgets/custom_comment_field_widget.dart';
+import 'package:clarekelly/app/widgets/custom_image_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -40,16 +41,7 @@ class FullEventItemCard extends StatelessWidget {
               ],
             ),
             heightBox4,
-            Container(
-              height: 131.h,
-              width: 348.w,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
-                image: DecorationImage(
-                    image: AssetImage(AssetsPath.imagefootballKid),
-                    fit: BoxFit.cover),
-              ),
-            ),
+           CustomImageContainer(cHeight: 131.0, cWidth: 348.0, imagePath: AssetsPath.imagefootballKid,),
             heightBox4,
             Text(
               'Julia’s Football Match!',
@@ -84,7 +76,7 @@ class FullEventItemCard extends StatelessWidget {
             heightBox4,
             
             heightBox4,
-            CommentInputField()
+            CommentInputField(cHeight: 44,)
           ],
         ),
       ),
