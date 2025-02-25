@@ -34,7 +34,7 @@ class _EventBarScreenState extends State<EventBarScreen> with SingleTickerProvid
       appBar: AppBar(
         elevation: 0,
         backgroundColor: AppColors.secondaryBackgroundColor,
-       title: SearchBarWidget(),
+       title: SearchBarWidget(hintText: 'Search for events...',isSuffixIcon: true,),
         bottom: TabBar(
           controller: _tabController,
           labelColor: AppColors.themeColor,

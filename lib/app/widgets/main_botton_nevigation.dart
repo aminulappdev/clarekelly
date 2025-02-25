@@ -1,3 +1,4 @@
+import 'package:clarekelly/app/modules/chat/views/chat_dashboard_screen.dart';
 import 'package:clarekelly/app/modules/events/views/event_bar.dart';
 import 'package:clarekelly/app/modules/homepage/views/home_screen.dart';
 import 'package:clarekelly/app/modules/profile/views/my_progile.dart';
@@ -20,7 +21,7 @@ class _MainButtonNavbarScreenState extends State<MainButtonNavbarScreen> {
   List<Widget> screens = const [
     HomeScreen(),
     EventBarScreen(),
-    HomeScreen(),
+    ChatDashboardScreen(),
     MyProfileScreen(),
   ];
 

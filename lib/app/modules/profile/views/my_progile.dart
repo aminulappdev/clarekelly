@@ -1,3 +1,4 @@
+import 'package:clarekelly/app/modules/followers/views/follow_page_bar.dart';
 import 'package:clarekelly/app/modules/profile/views/edit_profile_screen.dart';
 import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:clarekelly/app/utils/assets_path.dart';
@@ -18,13 +19,11 @@ class MyProfileScreen extends StatefulWidget {
 }
 
 class _MyProfileScreenState extends State<MyProfileScreen> {
-
-   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   Widget build(BuildContext context) {
     return Scaffold(
-       key: _scaffoldKey,
+      key: _scaffoldKey,
       drawer: MyDrawer(),
       backgroundColor: AppColors.secondaryBackgroundColor,
       body: Center(
@@ -36,12 +35,17 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
               heightBox12,
               Align(
                 alignment: Alignment.centerRight,
-                child:
-                    IconButton(onPressed: () {
-                       _scaffoldKey.currentState?.openDrawer();
-                    }, icon: Icon(Icons.settings,size: 36.h,color: AppColors.themeColor,)),
+                child: IconButton(
+                    onPressed: () {
+                      _scaffoldKey.currentState?.openDrawer();
+                    },
+                    icon: Icon(
+                      Icons.settings,
+                      size: 36.h,
+                      color: AppColors.themeColor,
+                    )),
               ),
-              
+
               CircleAvatar(
                 backgroundImage: AssetImage(AssetsPath.imagefootballKid),
                 radius: 39.r,
@@ -58,71 +62,14 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                     fontSize: 16.sp, fontWeight: FontWeight.w400),
               ),
               heightBox8,
-              SmallElevatedButton(name: 'Edit Profile',bgColor: Colors.black,textColor: Colors.white,pageName: EditProfileScreen.routeName,),
-              heightBox8,
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Column(
-                    children: [
-                      Text(
-                        '100',
-                        style: GoogleFonts.poppins(
-                            fontSize: 16.sp, fontWeight: FontWeight.w600),
-                      ),
-                      Text(
-                        'Events',
-                        style: GoogleFonts.poppins(
-                            fontSize: 12.sp,
-                            fontWeight: FontWeight.w600,
-                            color: AppColors.themeColor),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    height: 32,
-                    width: 2,
-                    color: AppColors.themeColor,
-                  ),
-                  Column(
-                    children: [
-                      Text(
-                        '25',
-                        style: GoogleFonts.poppins(
-                            fontSize: 16.sp, fontWeight: FontWeight.w600),
-                      ),
-                      Text(
-                        'Following',
-                        style: GoogleFonts.poppins(
-                            fontSize: 12.sp,
-                            fontWeight: FontWeight.w600,
-                            color: AppColors.themeColor),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    height: 32,
-                    width: 2,
-                    color: AppColors.themeColor,
-                  ),
-                  Column(
-                    children: [
-                      Text(
-                        '10M',
-                        style: GoogleFonts.poppins(
-                            fontSize: 16.sp, fontWeight: FontWeight.w600),
-                      ),
-                      Text(
-                        'Followers',
-                        style: GoogleFonts.poppins(
-                            fontSize: 12.sp,
-                            fontWeight: FontWeight.w600,
-                            color: AppColors.themeColor),
-                      ),
-                    ],
-                  ),
-                ],
+              SmallElevatedButton(
+                name: 'Edit Profile',
+                bgColor: Colors.black,
+                textColor: Colors.white,
+                pageName: EditProfileScreen.routeName,
               ),
+              heightBox8,
+              followerCheckFunction(context),
               heightBox8,
               Card(
                 elevation: 2.0,
@@ -144,24 +91,96 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
               heightBox20,
               // profileEventAlternativeContent()
               Expanded(
-              child: GridView.builder(
-                padding: EdgeInsets.zero,
-                itemCount: 4,
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  childAspectRatio: 0.68,
-                  crossAxisSpacing: 10,
-                  mainAxisSpacing: 10,
-                  crossAxisCount: 2,
+                child: GridView.builder(
+                  padding: EdgeInsets.zero,
+                  itemCount: 4,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    childAspectRatio: 0.68,
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 10,
+                    crossAxisCount: 2,
+                  ),
+                  itemBuilder: (context, index) {
+                    return const HalfEventItemCard();
+                  },
                 ),
-                itemBuilder: (context, index) {
-                  return const HalfEventItemCard();
-                },
-              ),
-                            )
-              
+              )
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  Widget followerCheckFunction(
+    BuildContext context,
+  ) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.pushNamed(context, FollowBarScreen.routeName);
+      },
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Column(
+            children: [
+              Text(
+                '100',
+                style: GoogleFonts.poppins(
+                    fontSize: 16.sp, fontWeight: FontWeight.w600),
+              ),
+              Text(
+                'Events',
+                style: GoogleFonts.poppins(
+                    fontSize: 12.sp,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.themeColor),
+              ),
+            ],
+          ),
+          Container(
+            height: 32,
+            width: 2,
+            color: AppColors.themeColor,
+          ),
+          Column(
+            children: [
+              Text(
+                '25',
+                style: GoogleFonts.poppins(
+                    fontSize: 16.sp, fontWeight: FontWeight.w600),
+              ),
+              Text(
+                'Following',
+                style: GoogleFonts.poppins(
+                    fontSize: 12.sp,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.themeColor),
+              ),
+            ],
+          ),
+          Container(
+            height: 32,
+            width: 2,
+            color: AppColors.themeColor,
+          ),
+          Column(
+            children: [
+              Text(
+                '10M',
+                style: GoogleFonts.poppins(
+                    fontSize: 16.sp, fontWeight: FontWeight.w600),
+              ),
+              Text(
+                'Followers',
+                style: GoogleFonts.poppins(
+                    fontSize: 12.sp,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.themeColor),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
@@ -182,12 +201,12 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
           height: 200,
           width: 200,
           decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(AssetsPath.profileEventAlt),
-                  fit: BoxFit.fill)),
+            image: DecorationImage(
+                image: AssetImage(AssetsPath.profileEventAlt),
+                fit: BoxFit.fill),
+          ),
         ),
       ],
     );
   }
 }
-

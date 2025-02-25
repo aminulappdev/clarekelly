@@ -1,21 +1,23 @@
 import 'package:clarekelly/app/utils/app_colors.dart';
+import 'package:clarekelly/app/widgets/custom_appbar.dart';
 import 'package:clarekelly/app/widgets/full_event_item_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class MyEvents extends StatefulWidget {
+class MyEventsDetails extends StatefulWidget {
   static const String routeName = '/my-event-screen';
-  const MyEvents({super.key});
+  const MyEventsDetails({super.key});
 
 
   @override
-  State<MyEvents> createState() => _MyEventsState();
+  State<MyEventsDetails> createState() => _MyEventsDetailsState();
 }
 
-class _MyEventsState extends State<MyEvents> {
+class _MyEventsDetailsState extends State<MyEventsDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: CustomAppBar(title: 'My Events'),
       backgroundColor: AppColors.secondaryBackgroundColor,
       body: ListView.builder(
         itemCount: 5,

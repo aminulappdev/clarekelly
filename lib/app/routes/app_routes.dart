@@ -5,12 +5,17 @@ import 'package:clarekelly/app/modules/authentication/views/otp_screen.dart';
 import 'package:clarekelly/app/modules/authentication/views/reset_password.dart';
 import 'package:clarekelly/app/modules/authentication/views/sign_in_screen.dart';
 import 'package:clarekelly/app/modules/authentication/views/sign_up_screen.dart';
+import 'package:clarekelly/app/modules/chat/views/add_memeber_group_screen.dart';
+import 'package:clarekelly/app/modules/chat/views/chatting_screen.dart';
 import 'package:clarekelly/app/modules/events/views/create_event_screen.dart';
 import 'package:clarekelly/app/modules/events/views/event_bar.dart';
 import 'package:clarekelly/app/modules/events/views/event_datails_screen.dart';
 import 'package:clarekelly/app/modules/events/views/feature_events.dart';
+import 'package:clarekelly/app/modules/events/views/my_event_details_screen.dart';
+import 'package:clarekelly/app/modules/followers/views/follow_page_bar.dart';
 import 'package:clarekelly/app/modules/homepage/views/member_profile_screen.dart';
 import 'package:clarekelly/app/modules/events/views/show_event_page.dart';
+import 'package:clarekelly/app/modules/notifications/views/notification_screen.dart';
 import 'package:clarekelly/app/modules/onboarding/views/onboarding_screen.dart';
 import 'package:clarekelly/app/modules/profile/views/edit_profile_screen.dart';
 import 'package:clarekelly/app/modules/profile/views/my_progile.dart';
@@ -35,21 +40,29 @@ class AppRoutes {
     MainButtonNavbarScreen.routeName: (context) => const MainButtonNavbarScreen(),
 
     // Homepage Section
-    
     MemberProfileScreen.routeName: (context) => const MemberProfileScreen(),
     
-
     // Event Section
     EventBarScreen.routeName: (context) => const EventBarScreen(),
     CreateEventScreen.routeName: (context) => const CreateEventScreen(),
     FeatureEvents.routeName: (context) => const FeatureEvents(),
     EventDatailsScreen.routeName: (context) => const EventDatailsScreen(),
     ShowEventsScreen.routeName: (context) =>  ShowEventsScreen(),
+    MyEventsDetails.routeName: (context) =>  MyEventsDetails(),
 
     // Profile Section
     MyProfileScreen.routeName: (context) =>  MyProfileScreen(),
     EditProfileScreen.routeName: (context) =>  EditProfileScreen(),
 
+    // Chatting Section
+    ChattingScreen.routeName: (context) =>  ChattingScreen(),
+    AddMembersGroupScreen.routeName: (context) =>  AddMembersGroupScreen(),
+
+    // Notification Section
+    NotificationScreen.routeName: (context) =>  NotificationScreen(),
+
+    // Follower Section
+    FollowBarScreen.routeName: (context) =>  FollowBarScreen(),
 
 
   };

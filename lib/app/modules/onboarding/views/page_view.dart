@@ -35,7 +35,7 @@ class OnboardingPage extends StatelessWidget {
             alignment: Alignment.centerRight,
             child: GestureDetector(
               onTap: () {
-                Navigator.pushReplacementNamed(context, AuthScreen.routeName);
+                Navigator.pushNamed(context, AuthScreen.routeName);
               },
               child: Text(
                 'Skip',

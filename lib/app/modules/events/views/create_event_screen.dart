@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:clarekelly/app/modules/authentication/widgets/costum_textField.dart';
+import 'package:clarekelly/app/modules/events/views/my_event.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -101,7 +102,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                   SizedBox(
                     width: MediaQuery.of(context).size.width,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, MyEvents.routeName);
+                      },
                       child: Text(
                         'Create Event',
                         style: GoogleFonts.outfit(
