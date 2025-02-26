@@ -37,10 +37,14 @@ class _ChatDashboardScreenState extends State<ChatDashboardScreen> {
                       fontSize: 20.sp, fontWeight: FontWeight.w600),
                 ),
                 GestureDetector(
-                  onTap: () {
-                    Navigator.pushNamed(context, AddMembersGroupScreen.routeName);
-                  },
-                  child: Icon(Icons.edit_note ,size: 28,)),
+                    onTap: () {
+                      Navigator.pushNamed(
+                          context, AddMembersGroupScreen.routeName);
+                    },
+                    child: Icon(
+                      Icons.edit_square,
+                      size: 28,
+                    )),
               ],
             ),
             heightBox12,
@@ -68,15 +72,19 @@ class _ChatDashboardScreenState extends State<ChatDashboardScreen> {
             SizedBox(
               height: 520.h,
               child: ListView.builder(
-                padding: EdgeInsets.all(0),
-                itemCount: 10,
-                itemBuilder: (contex,index) {
-                  return ChatSection(isGroup: false,);
-                }
-              ),
+                  padding: EdgeInsets.all(0),
+                  itemCount: 10,
+                  itemBuilder: (contex, index) {
+                    if (index % 2 == 0) {
+                      return ChatSection(
+                        isGroup: false,
+                      );
+                    }
+                    return ChatSection(
+                      isGroup: true,
+                    );
+                  }),
             )
-
-
           ],
         ),
       )),

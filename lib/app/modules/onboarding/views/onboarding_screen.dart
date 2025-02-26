@@ -1,7 +1,7 @@
+import 'package:clarekelly/app/modules/authentication/views/auth_scree.dart';
 import 'package:clarekelly/app/modules/onboarding/views/page_view.dart';
 import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:clarekelly/app/utils/assets_path.dart';
-import 'package:clarekelly/app/widgets/main_botton_nevigation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -98,7 +98,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       );
                     } else {
                       Navigator.pushReplacementNamed(
-                          context, MainButtonNavbarScreen.routeName);
+                          context, AuthScreen.routeName);
                     }
                   },
                   child: Text(buttonTexts[_currentPage]),

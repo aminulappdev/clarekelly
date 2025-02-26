@@ -8,15 +8,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ForgotPasswordScreen extends StatefulWidget {
-  static const String routeName = '/forgot-password-screen';
-  const ForgotPasswordScreen({super.key});
+class VerifyEmailScreen extends StatefulWidget {
+  static const String routeName = '/verify-email-screen';
+  const VerifyEmailScreen({super.key});
 
   @override
-  State<ForgotPasswordScreen> createState() => _ForgotPasswordScreenState();
+  State<VerifyEmailScreen> createState() => _VerifyEmailScreenState();
 }
 
-class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
+class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool isChecked = false;
 
@@ -49,7 +49,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   width: MediaQuery.of(context).size.width,
                   child: ElevatedButton(
                     onPressed: () {
-                       Navigator.pushNamed(context, OTPScreen.routeName);
+                       Navigator.pushNamed(context, OTPScreen.routeName,arguments: {'pPage': 'verifyEmail', 'email': 'user@example.com'},);
                     },
                     child: Text('Get Verification Code'),
                   ),

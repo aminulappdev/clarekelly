@@ -32,7 +32,7 @@ class ChatSection extends StatelessWidget {
                   ),
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, ChattingScreen.routeName);
+                Navigator.pushNamed(context, ChattingScreen.routeName,arguments: isGroup);
               },
               child: SizedBox(
                 width: 240.w,

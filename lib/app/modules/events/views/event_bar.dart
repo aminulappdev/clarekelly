@@ -32,6 +32,7 @@ class _EventBarScreenState extends State<EventBarScreen> with SingleTickerProvid
     return Scaffold(
       backgroundColor: AppColors.secondaryBackgroundColor,
       appBar: AppBar(
+        automaticallyImplyLeading: false, 
         elevation: 0,
         backgroundColor: AppColors.secondaryBackgroundColor,
        title: SearchBarWidget(hintText: 'Search for events...',isSuffixIcon: true,),

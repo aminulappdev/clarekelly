@@ -1,6 +1,8 @@
+import 'package:clarekelly/app/modules/authentication/views/change_password_screen.dart';
 import 'package:clarekelly/app/modules/profile/views/info_screen.dart';
 import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:clarekelly/app/utils/responsive_size.dart';
+import 'package:clarekelly/app/widgets/custom_dialog_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -18,18 +20,13 @@ class MyDrawer extends StatelessWidget {
       child: Drawer(
         backgroundColor: AppColors.secondaryBackgroundColor,
         child: ListView(
-          
           children: <Widget>[
-            
             Padding(
               padding: EdgeInsets.all(16.r),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  
-                 heightBox40,            
-                 
-                 
+                  heightBox40,
                   costomRow(context, Icons.gavel, 'Privacy Policy',
                       Icons.chevron_right, () {
                     Navigator.push(
@@ -58,13 +55,10 @@ class MyDrawer extends StatelessWidget {
                     );
                   }),
                   heightBox20,
-                   costomRow(context, Icons.lock_outline, 'Changed password',
+                  costomRow(context, Icons.lock_outline, 'Changed password',
                       Icons.chevron_right, () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //       builder: (context) => ChangePasswordScreen()),
-                    // );
+                    Navigator.pushNamed(
+                        context, ChangePasswordScreen.routeName);
                   }),
                   heightBox20,
                   GestureDetector(
@@ -76,31 +70,45 @@ class MyDrawer extends StatelessWidget {
                       //   ),
                       // );
                     },
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            Icon(
-                              size: 24,
-                              Icons.delete,
-                              color: Colors.red,
-                            ),
-                            widthBox12,
-                            Text(
-                              'Delete Account',
-                              style: GoogleFonts.urbanist(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600),
-                            )
-                          ],
-                        ),
-                        Icon(Icons.chevron_right)
-                      ],
+                    child: GestureDetector(
+                      onTap: () {
+                        showDialog(
+                          context: context,
+                          builder: (context) => CustomShowDialog(
+                            title: "Do you want to delete your account?",
+                            b1Name: 'Cancel',
+                            b2Name: 'Delete',
+                            onTap: () {},
+                          ),
+                        );
+                      },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(
+                                size: 24,
+                                Icons.delete,
+                                color: Colors.red,
+                              ),
+                              widthBox12,
+                              Text(
+                                'Delete Account',
+                                style: GoogleFonts.urbanist(
+                                    fontSize: 18, fontWeight: FontWeight.w600),
+                              )
+                            ],
+                          ),
+                          Icon(Icons.chevron_right)
+                        ],
+                      ),
                     ),
                   ),
-                   SizedBox(height: 480.h,),
-                   GestureDetector(
+                  SizedBox(
+                    height: 480.h,
+                  ),
+                  GestureDetector(
                     onTap: () {
                       // Navigator.push(
                       //   context,
@@ -109,7 +117,6 @@ class MyDrawer extends StatelessWidget {
                       //   ),
                       // );
                     },
-                    
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
@@ -122,10 +129,8 @@ class MyDrawer extends StatelessWidget {
                         Text(
                           'Log Out',
                           style: GoogleFonts.urbanist(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w600),
+                              fontSize: 18, fontWeight: FontWeight.w600),
                         ),
-                        
                       ],
                     ),
                   ),
@@ -166,4 +171,4 @@ class MyDrawer extends StatelessWidget {
     );
   }
 }
- 
+

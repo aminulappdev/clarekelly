@@ -1,4 +1,5 @@
-import 'package:clarekelly/app/modules/authentication/views/complete_profile_screen.dart';
+import 'package:clarekelly/app/modules/authentication/views/reset_password.dart';
+import 'package:clarekelly/app/modules/authentication/views/sign_in_screen.dart';
 import 'package:clarekelly/app/modules/authentication/widgets/custom_account_cheking.dart';
 import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:clarekelly/app/utils/responsive_size.dart';
@@ -9,8 +10,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class OTPScreen extends StatefulWidget {
+  final String email;
+  final String pPage;
   static const String routeName = '/otp-screen';
-  const OTPScreen({super.key});
+  const OTPScreen({super.key, required this.pPage, required this.email});
 
   @override
   State<OTPScreen> createState() => _OTPScreenState();
@@ -29,7 +32,6 @@ class _OTPScreenState extends State<OTPScreen> {
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
-              
               children: [
                 Align(
                   alignment: Alignment.centerLeft,
@@ -45,13 +47,24 @@ class _OTPScreenState extends State<OTPScreen> {
                 heightBox30,
                 buildOTPForm(),
                 heightBox20,
-                CustomAccountCheking(name: 'Didn’t receive the code? ', operationName: 'Resend', ontap: (){}),
-                SizedBox(height: 400.h,),
+                CustomAccountCheking(
+                    name: 'Didn’t receive the code? ',
+                    operationName: 'Resend',
+                    ontap: () {}),
+                SizedBox(
+                  height: 400.h,
+                ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width,
                   child: ElevatedButton(
                     onPressed: () {
-                       Navigator.pushNamed(context, CompleteProfileScreen.routeName);
+                      if (widget.pPage == 'signUp') {
+                        Navigator.pushNamed(
+                            context, SignInScreen.routeName);
+                      } else if (widget.pPage == 'verifyEmail') {
+                        Navigator.pushNamed(
+                            context, ResetPasswordScreen.routeName);
+                      }
                     },
                     child: Text('Verify'),
                   ),
@@ -70,8 +83,9 @@ class _OTPScreenState extends State<OTPScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(width: MediaQuery.of(context).size.width/1.2,
-            child: PinCodeTextField(             
+          SizedBox(
+            width: MediaQuery.of(context).size.width / 1.2,
+            child: PinCodeTextField(
               length: 4,
               animationType: AnimationType.fade,
               keyboardType: TextInputType.number,
@@ -79,7 +93,8 @@ class _OTPScreenState extends State<OTPScreen> {
                   borderWidth: 0.2,
                   shape: PinCodeFieldShape.box,
                   borderRadius: BorderRadius.circular(12.r),
-                  inactiveColor: const Color.fromARGB(218, 222, 220, 220), // Border color when not filled
+                  inactiveColor: const Color.fromARGB(
+                      218, 222, 220, 220), // Border color when not filled
                   fieldHeight: 70.h,
                   fieldWidth: 70.h,
                   activeFillColor: Colors.white,
@@ -101,19 +116,19 @@ class _OTPScreenState extends State<OTPScreen> {
       children: [
         heightBox30,
         CustomThreeRichText(
-            mainText: 'Enter ',
-            mainTextSize: 24.sp,
-            mainTextColor: Colors.black,
-            mainTextFontWeight: FontWeight.normal,
-            richText: "Verification ",
-            richTextSize: 24.sp,
-            richTextColor: AppColors.themeColor,
-            richTextFontWeight: FontWeight.normal,
-            secondRichText: 'Code',
-            secondRichTextColor: Colors.black,
-            secondRichTextFontWeight:  FontWeight.normal,
-            secondRichTextSize: 24.sp,
-            ),
+          mainText: 'Enter ',
+          mainTextSize: 24.sp,
+          mainTextColor: Colors.black,
+          mainTextFontWeight: FontWeight.normal,
+          richText: "Verification ",
+          richTextSize: 24.sp,
+          richTextColor: AppColors.themeColor,
+          richTextFontWeight: FontWeight.normal,
+          secondRichText: 'Code',
+          secondRichTextColor: Colors.black,
+          secondRichTextFontWeight: FontWeight.normal,
+          secondRichTextSize: 24.sp,
+        ),
         heightBox4,
         Text(
           'Enter the code that was sent to your email.',

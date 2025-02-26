@@ -1,3 +1,4 @@
+import 'package:clarekelly/app/modules/authentication/views/otp_screen.dart';
 import 'package:clarekelly/app/modules/authentication/views/sign_in_screen.dart';
 import 'package:clarekelly/app/modules/authentication/widgets/costum_textField.dart';
 import 'package:clarekelly/app/modules/authentication/widgets/custom_account_cheking.dart';
@@ -48,7 +49,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 SizedBox(
                   width: MediaQuery.of(context).size.width,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(
+                        context,
+                        OTPScreen.routeName,
+                        arguments: {
+                          'pPage': 'signUp',
+                          'email': 'user@example.com'
+                        },
+                      );
+                    },
                     child: Text('Sign up'),
                   ),
                 ),

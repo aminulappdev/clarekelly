@@ -1,9 +1,9 @@
-import 'package:clarekelly/app/modules/authentication/views/forgot_password_screen.dart';
-import 'package:clarekelly/app/modules/authentication/views/sign_up_screen.dart';
+import 'package:clarekelly/app/modules/authentication/views/verify_email_screen.dart';
 import 'package:clarekelly/app/modules/authentication/widgets/costum_textField.dart';
 import 'package:clarekelly/app/modules/authentication/widgets/custom_account_cheking.dart';
 import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:clarekelly/app/utils/responsive_size.dart';
+import 'package:clarekelly/app/widgets/main_botton_nevigation.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -51,7 +51,8 @@ class _SignInScreenState extends State<SignInScreen> {
                     widthBox4,
                     GestureDetector(
                       onTap: () {
-                         Navigator.pushNamed(context, ForgotPasswordScreen.routeName);
+                        Navigator.pushNamed(
+                            context, VerifyEmailScreen.routeName);
                       },
                       child: Text(
                         'Forgot password?',
@@ -67,16 +68,20 @@ class _SignInScreenState extends State<SignInScreen> {
                 SizedBox(
                   width: MediaQuery.of(context).size.width,
                   child: ElevatedButton(
-                    onPressed: () {},
-                    child: Text('Sign up'),
+                    onPressed: () {
+                      Navigator.pushNamed(
+                          context, MainButtonNavbarScreen.routeName);
+                    },
+                    child: Text('Sign In'),
                   ),
                 ),
                 heightBox50,
-                CustomAccountCheking( 
+                CustomAccountCheking(
                   name: 'Don’t have an account? ',
                   operationName: 'Sign Up',
                   ontap: () {
-                     Navigator.pushNamed(context, SignUpScreen.routeName);
+                    Navigator.pushNamed(
+                        context, MainButtonNavbarScreen.routeName);
                   },
                 ),
                 widthBox4,
@@ -90,22 +95,22 @@ class _SignInScreenState extends State<SignInScreen> {
 
   Row forgotPasswordSection() {
     return Row(
-                    children: [
-                      Checkbox(
-                        value: isChecked,
-                        onChanged: (bool? value) {
-                          setState(() {
-                            isChecked = value!;
-                          });
-                        },
-                      ),
-                      Text(
-                        'Remember me',
-                        style: GoogleFonts.outfit(
-                            fontSize: 16.sp, fontWeight: FontWeight.w400),
-                      ),
-                    ],
-                  );
+      children: [
+        Checkbox(
+          value: isChecked,
+          onChanged: (bool? value) {
+            setState(() {
+              isChecked = value!;
+            });
+          },
+        ),
+        Text(
+          'Remember me',
+          style:
+              GoogleFonts.outfit(fontSize: 16.sp, fontWeight: FontWeight.w400),
+        ),
+      ],
+    );
   }
 
   Widget buildSignInForm() {
@@ -114,7 +119,7 @@ class _SignInScreenState extends State<SignInScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-         CustomTextField(
+          CustomTextField(
             keyboardType: TextInputType.emailAddress,
             label: 'Email',
             hintText: 'Email',
@@ -141,7 +146,7 @@ class _SignInScreenState extends State<SignInScreen> {
               }
               return null;
             },
-          ),         
+          ),
         ],
       ),
     );
@@ -152,7 +157,8 @@ class _SignInScreenState extends State<SignInScreen> {
       children: [
         Text(
           'Welcome Back!',
-          style: GoogleFonts.outfit(fontSize: 24.sp, fontWeight: FontWeight.w500),
+          style:
+              GoogleFonts.outfit(fontSize: 24.sp, fontWeight: FontWeight.w500),
         ),
         heightBox4,
         Text(
@@ -163,7 +169,6 @@ class _SignInScreenState extends State<SignInScreen> {
               fontWeight: FontWeight.w500),
         ),
         heightBox4,
-        
       ],
     );
   }

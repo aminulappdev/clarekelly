@@ -7,18 +7,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ResetPasswordScreen extends StatefulWidget {
-  static const String routeName = '/reset-password-screen';
-  const ResetPasswordScreen({super.key});
+class ChangePasswordScreen extends StatefulWidget {
+  static const String routeName = '/change-password-screen';
+  const ChangePasswordScreen({super.key});
 
   @override
-  State<ResetPasswordScreen> createState() => _ResetPasswordScreenState();
+  State<ChangePasswordScreen> createState() => _ChangePasswordScreenState();
 }
 
-class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
+class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool isChecked = false;
-
+ 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -43,7 +43,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                 heightBox30,
                 buildResetPasswordInForm(),
                 SizedBox(
-                  height: 350.h,
+                  height: 280.h,
                 ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width,
@@ -68,6 +68,19 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          CustomTextField(
+            label: 'Old Password',
+            hintText: 'Old Password',
+            icon: Icons.lock,
+            isPassword: true,
+            validator: (String? value) {
+              if (value!.isEmpty) {
+                return 'password';
+              }
+              return null;
+            },
+          ),
+          heightBox16,
           CustomTextField(
             label: 'Password',
             hintText: 'Password',

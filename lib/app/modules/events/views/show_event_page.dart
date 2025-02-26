@@ -15,7 +15,7 @@ class ShowEventsScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.secondaryBackgroundColor,
       appBar: CustomAppBar(title: args.appTitle),
-      body: Expanded(child: args.content),
+      body: Container(child: args.content),
     );
   }
 }

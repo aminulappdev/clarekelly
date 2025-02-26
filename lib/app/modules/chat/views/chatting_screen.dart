@@ -2,14 +2,16 @@ import 'package:clarekelly/app/modules/chat/widgets/chatting_field.dart';
 import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:clarekelly/app/utils/assets_path.dart';
 import 'package:clarekelly/app/utils/responsive_size.dart';
+import 'package:clarekelly/app/widgets/custom_dialog_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ChattingScreen extends StatefulWidget {
+  final bool isGroup;
   static const String routeName = '/chat-screen';
 
-  const ChattingScreen({super.key});
+  const ChattingScreen({super.key, required this.isGroup});
 
   @override
   State<ChattingScreen> createState() => _ChattingScreenState();
@@ -40,6 +42,26 @@ class _ChattingScreenState extends State<ChattingScreen> {
             Navigator.pop(context);
           },
         ),
+        actions: [
+          widget.isGroup ? Padding(
+            padding: EdgeInsets.only(right: 10.w),
+            child: GestureDetector(
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) => CustomShowDialog(
+                      title: "Do you want to leave this group?",
+                      b1Name: 'Cancel',
+                      b2Name: 'Leave',
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+                  );
+                },
+                child: Icon(Icons.logout_outlined,size: 30.h,)),
+          ): Container()
+        ],
         title: Row(
           children: [
             CircleAvatar(

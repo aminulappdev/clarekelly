@@ -1,6 +1,6 @@
 import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:clarekelly/app/widgets/custom_appbar.dart';
-import 'package:clarekelly/app/widgets/full_event_item_card.dart';
+import 'package:clarekelly/app/modules/events/widgets/full_event_item_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

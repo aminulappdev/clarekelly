@@ -167,7 +167,7 @@ class _EventDatailsScreenState extends State<EventDatailsScreen> {
 
   Widget goingInterestSection() {
     return Container(
-      width: 250.w,
+      width: 260.w,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           border: Border.all(color: Colors.black)),
@@ -178,12 +178,13 @@ class _EventDatailsScreenState extends State<EventDatailsScreen> {
           children: [
             CircleAvatar(
                 backgroundColor: Colors.green,
-                radius: 11,
+                radius: 11.r,
                 child: Icon(
                   Icons.check,
                   color: Colors.white,
                   size: 14.h,
                 )),
+                widthBox5,
             Text(
               'Going',
               style: GoogleFonts.outfit(
@@ -200,6 +201,7 @@ class _EventDatailsScreenState extends State<EventDatailsScreen> {
                   color: Colors.white,
                   size: 14.h,
                 )),
+                 widthBox5,
             Text(
               'Not intersted',
               style: GoogleFonts.outfit(

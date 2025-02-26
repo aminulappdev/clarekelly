@@ -2,7 +2,7 @@ import 'package:clarekelly/app/modules/profile/views/edit_profile_screen.dart';
 import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:clarekelly/app/utils/assets_path.dart';
 import 'package:clarekelly/app/utils/responsive_size.dart';
-import 'package:clarekelly/app/widgets/half_event_item_card.dart';
+import 'package:clarekelly/app/modules/events/widgets/half_event_item_card.dart';
 import 'package:clarekelly/app/widgets/small_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

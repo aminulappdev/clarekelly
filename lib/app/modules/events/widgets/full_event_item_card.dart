@@ -9,9 +9,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class EventItemCard extends StatelessWidget {
-  const EventItemCard({
-    super.key, 
+class FullEventItemCard extends StatelessWidget {
+  const FullEventItemCard({
+    super.key,
   });
 
   @override
@@ -21,8 +21,8 @@ class EventItemCard extends StatelessWidget {
         Navigator.pushNamed(context, EventDatailsScreen.routeName);
       },
       child: Container(
-        height: 338,
-        width: 175,
+        height: 312,
+        width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.r),
           color: Colors.white,
@@ -41,19 +41,19 @@ class EventItemCard extends StatelessWidget {
                   widthBox4,
                   Text(
                     'Md Aminul',
-                    style: GoogleFonts.outfit(fontSize: 12),
+                    style: GoogleFonts.outfit(fontSize: 12.sp),
                   )
                 ],
               ),
               heightBox4,
-              CustomImageContainer(cHeight: 131.0, cWidth: 155.0, imagePath: AssetsPath.imagefootballKid,),
+             CustomImageContainer(cHeight: 131.0, cWidth: 348.0, imagePath: AssetsPath.imagefootballKid,),
               heightBox4,
               Text(
                 'Julia’s Football Match!',
                 style: GoogleFonts.outfit(
                     fontSize: 12, fontWeight: FontWeight.w700),
               ),
-              heightBox8,
+              heightBox4,
               Text(
                 '31st Dec 2025 • 04:00 PM',
                 style: GoogleFonts.outfit(
@@ -61,7 +61,7 @@ class EventItemCard extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                     color: AppColors.themeColor),
               ),
-              heightBox8,
+              heightBox4,
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -78,43 +78,8 @@ class EventItemCard extends StatelessWidget {
                   ),
                 ],
               ),
-              heightBox8,
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  CircleAvatar(
-                      backgroundColor: Colors.green,
-                      radius: 10,
-                      child: Icon(
-                        Icons.check,
-                        color: Colors.white,
-                        size: 14,
-                      )),
-                  Text(
-                    'Going',
-                    style: GoogleFonts.outfit(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xff5D5D5D)),
-                  ),
-                  widthBox4,
-                  CircleAvatar(
-                      backgroundColor: Colors.red,
-                      radius: 10,
-                      child: Icon(
-                        Icons.close,
-                        color: Colors.white,
-                        size: 14,
-                      )),
-                  Text(
-                    'Not intersted',
-                    style: GoogleFonts.outfit(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xff5D5D5D)),
-                  ),
-                ],
-              ),
+              heightBox4,
+              
               heightBox4,
               CommentInputField(cHeight: 44,)
             ],
@@ -124,5 +89,3 @@ class EventItemCard extends StatelessWidget {
     );
   }
 }
-
-

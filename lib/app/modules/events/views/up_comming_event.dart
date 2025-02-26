@@ -1,4 +1,4 @@
-import 'package:clarekelly/app/widgets/half_event_item_card.dart';
+import 'package:clarekelly/app/modules/events/widgets/half_event_item_card.dart';
 import 'package:flutter/material.dart';
 
 class UpComingEvents extends StatelessWidget {
