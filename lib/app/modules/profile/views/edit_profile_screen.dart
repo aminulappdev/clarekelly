@@ -1,6 +1,5 @@
 import 'package:clarekelly/app/modules/authentication/widgets/change_profile_pic_widget.dart';
 import 'package:clarekelly/app/modules/authentication/widgets/costum_textField.dart';
-import 'package:clarekelly/app/modules/profile/views/my_progile.dart';
 import 'package:clarekelly/app/utils/app_colors.dart';
 import 'package:clarekelly/app/utils/responsive_size.dart';
 import 'package:clarekelly/app/widgets/custom_three_reach_text.dart';
