@@ -31,6 +31,7 @@ class _MemberProfileScreenState extends State<MemberProfileScreen> {
     setState(() {});
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.secondaryBackgroundColor,
