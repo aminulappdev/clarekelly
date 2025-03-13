@@ -19,14 +19,14 @@ class CustomAccountCheking extends StatelessWidget {
       children: [
         Text(
           name,
-          style: GoogleFonts.outfit(
+          style: GoogleFonts.notoSansMyanmar(
               fontSize: 16.sp, fontWeight: FontWeight.w400),
         ),
         GestureDetector(
           onTap: ontap,
           child: Text(
             operationName,
-            style: GoogleFonts.outfit(
+            style: GoogleFonts.notoSansMyanmar(
                 fontSize: 16.sp, fontWeight: FontWeight.w600,decoration: TextDecoration.underline),
           ),
         ),

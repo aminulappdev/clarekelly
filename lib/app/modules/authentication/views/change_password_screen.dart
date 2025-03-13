@@ -127,7 +127,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
         heightBox4,
         Text(
           'Password  must have 6-8 characters.',
-          style: GoogleFonts.outfit(
+          style: GoogleFonts.notoSansMyanmar(
               fontSize: 14.sp,
               color: const Color.fromARGB(255, 0, 0, 0),
               fontWeight: FontWeight.w500),

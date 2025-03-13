@@ -30,9 +30,9 @@ class CustomTitle extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title,style: GoogleFonts.outfit(
+                  Text(title,style: GoogleFonts.notoSansMyanmar(
           fontSize: 18.sp, fontWeight: FontWeight.w700),),
-          Text(subtitle,style: GoogleFonts.outfit(
+          Text(subtitle,style: GoogleFonts.notoSansMyanmar(
           fontSize: 18.sp, fontWeight: FontWeight.w400,color: Color(0xff5D5D5D)),),
                 ],
               )

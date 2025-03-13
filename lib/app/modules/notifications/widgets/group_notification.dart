@@ -34,7 +34,7 @@ class GroupNotification extends StatelessWidget {
                   Text(
                     maxLines: 1,
                     'Celline, Kyedae, Nami and 2 others going to your event.',
-                    style: GoogleFonts.outfit(
+                    style: GoogleFonts.notoSansMyanmar(
                         fontSize: 14.sp, fontWeight: FontWeight.w400),
                   ),
                   Row(
@@ -45,7 +45,7 @@ class GroupNotification extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: AppColors.themeColor,
                             borderRadius: BorderRadius.circular(8)),
-                            child: Center(child: Text('Accept',style: GoogleFonts.outfit(fontSize: 12,color: Colors.white),),),
+                            child: Center(child: Text('Accept',style: GoogleFonts.notoSansMyanmar(fontSize: 12,color: Colors.white),),),
                       ), widthBox8,
                       Container(
                         height: 24,
@@ -54,7 +54,7 @@ class GroupNotification extends StatelessWidget {
                             color: Colors.transparent,
                             border: Border.all(color: AppColors.themeColor),
                             borderRadius: BorderRadius.circular(8)),
-                            child: Center(child: Text('Delete',style: GoogleFonts.outfit(fontSize: 12,color: Colors.black),),),
+                            child: Center(child: Text('Delete',style: GoogleFonts.notoSansMyanmar(fontSize: 12,color: Colors.black),),),
                       )
                       
                     ],
@@ -65,7 +65,7 @@ class GroupNotification extends StatelessWidget {
           SizedBox(width: 74.w,),
           Text(
             '1 min ago',
-            style: GoogleFonts.outfit(
+            style: GoogleFonts.notoSansMyanmar(
                 fontSize: 12.sp, fontWeight: FontWeight.w400),
           )
         ],

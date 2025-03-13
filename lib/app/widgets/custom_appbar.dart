@@ -19,7 +19,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Colors.transparent,
       title: Text(
         title,
-        style: GoogleFonts.outfit(fontSize: 20.sp, fontWeight: FontWeight.w600),
+        style: GoogleFonts.notoSansMyanmar(fontSize: 20.sp, fontWeight: FontWeight.w600),
       ),
       leading: GestureDetector(
         onTap: () {

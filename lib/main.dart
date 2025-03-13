@@ -23,6 +23,7 @@ class ClareKellyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'ClareKelly',
           theme: ThemeData(
+            fontFamily: 'notoSansMyanmar',
             scaffoldBackgroundColor: AppColors.primaryBackgroundColor,
             elevatedButtonTheme: ElevatedTheme.elevatedButtonThemeData(), 
             useMaterial3: true,

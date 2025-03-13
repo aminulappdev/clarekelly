@@ -26,7 +26,7 @@ class CustomOutlineBorderElevatedButton extends StatelessWidget {
           child: Text(
             name,
             style:
-                GoogleFonts.outfit(fontSize: 22.sp, fontWeight: FontWeight.w400),
+                GoogleFonts.notoSansMyanmar(fontSize: 22.sp, fontWeight: FontWeight.w400),
           ),
         ),
       ),

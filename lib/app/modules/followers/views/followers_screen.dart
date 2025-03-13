@@ -30,7 +30,7 @@ class FollowersScreen extends StatelessWidget {
                   widthBox8,
                   Text(
                     'Aminul',
-                    style: GoogleFonts.outfit(
+                    style: GoogleFonts.notoSansMyanmar(
                         fontSize: 16.sp, fontWeight: FontWeight.w400),
                   ),
                 ],
@@ -45,7 +45,7 @@ class FollowersScreen extends StatelessWidget {
                 child: Center(
                   child: Text(
                     'Follow back',
-                    style: GoogleFonts.outfit(
+                    style: GoogleFonts.notoSansMyanmar(
                         fontSize: 14.sp,
                         fontWeight: FontWeight.w400,
                         color: Colors.white),

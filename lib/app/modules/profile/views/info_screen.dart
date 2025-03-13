@@ -15,7 +15,7 @@ class InfoScreen extends StatelessWidget {
           forceMaterialTransparency: true,
           title: Text(
             appBarTitle,
-            style: GoogleFonts.urbanist(fontWeight: FontWeight.bold),
+            style: GoogleFonts.notoSansMyanmar(fontWeight: FontWeight.bold),
           ),
           centerTitle: true,
         ),
@@ -27,7 +27,7 @@ class InfoScreen extends StatelessWidget {
               children: [
                 Text(
                   data,
-                  style: GoogleFonts.urbanist(),
+                  style:  GoogleFonts.notoSansMyanmar(),
                   textAlign: TextAlign.justify,
                 )
               ],

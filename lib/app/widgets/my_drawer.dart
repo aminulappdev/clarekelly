@@ -95,7 +95,7 @@ class MyDrawer extends StatelessWidget {
                               widthBox12,
                               Text(
                                 'Delete Account',
-                                style: GoogleFonts.urbanist(
+                                style: GoogleFonts.notoSansMyanmar(
                                     fontSize: 18, fontWeight: FontWeight.w600),
                               )
                             ],
@@ -128,7 +128,7 @@ class MyDrawer extends StatelessWidget {
                         widthBox12,
                         Text(
                           'Log Out',
-                          style: GoogleFonts.urbanist(
+                          style: GoogleFonts.notoSansMyanmar(
                               fontSize: 18, fontWeight: FontWeight.w600),
                         ),
                       ],
@@ -160,7 +160,7 @@ class MyDrawer extends StatelessWidget {
               widthBox12,
               Text(
                 name,
-                style: GoogleFonts.urbanist(
+                style: GoogleFonts.notoSansMyanmar(
                     fontSize: 18.sp, fontWeight: FontWeight.w600),
               )
             ],

@@ -42,7 +42,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
        
         Text(
           widget.label,
-          style: GoogleFonts.poppins(
+          style: GoogleFonts.notoSansMyanmar(
             fontSize: 16.sp,
             fontWeight: FontWeight.w500,
             color: Colors.black,
@@ -73,7 +73,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
             decoration: InputDecoration(
                
               hintText: widget.hintText,
-              hintStyle: GoogleFonts.poppins(
+              hintStyle: GoogleFonts.notoSansMyanmar(
                 fontSize: 14.sp,
                 color: Colors.grey,
               ),

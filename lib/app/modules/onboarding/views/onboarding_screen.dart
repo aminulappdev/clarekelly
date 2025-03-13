@@ -101,7 +101,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           context, AuthScreen.routeName);
                     }
                   },
-                  child: Text(buttonTexts[_currentPage]),
+                  child: Text(buttonTexts[_currentPage], style: TextStyle(fontSize: _currentPage == 1 ? 30:24), ),
                 ),
               ),
             )

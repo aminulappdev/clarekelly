@@ -72,10 +72,10 @@ class _ChattingScreenState extends State<ChattingScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Jhon Doe",
-                    style: GoogleFonts.outfit(
+                    style: GoogleFonts.notoSansMyanmar(
                         fontSize: 16.sp, fontWeight: FontWeight.w500)),
                 Text("Online",
-                    style: GoogleFonts.outfit(
+                    style: GoogleFonts.notoSansMyanmar(
                         fontSize: 12.sp, fontWeight: FontWeight.w400)),
               ],
             ),

@@ -23,7 +23,7 @@ class EventItemCard extends StatelessWidget {
       child: Padding(
         padding:  EdgeInsets.all(0.h),
         child: Container(
-          height: 338.h,
+          height: 340.h,
           width: 175.w,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20.r),
@@ -43,7 +43,7 @@ class EventItemCard extends StatelessWidget {
                     widthBox4,
                     Text(
                       'Md Aminul',
-                      style: GoogleFonts.outfit(fontSize: 12),
+                      style: GoogleFonts.notoSansMyanmar(fontSize: 12),
                     )
                   ],
                 ),
@@ -52,18 +52,18 @@ class EventItemCard extends StatelessWidget {
                 heightBox4,
                 Text(
                   'Julia’s Football Match!',
-                  style: GoogleFonts.outfit(
+                  style: GoogleFonts.notoSansMyanmar(
                       fontSize: 12.sp, fontWeight: FontWeight.w700),
                 ),
                 heightBox8,
                 Text(
                   '31st Dec 2025 • 04:00 PM',
-                  style: GoogleFonts.outfit(
+                  style: GoogleFonts.notoSansMyanmar(
                       fontSize: 12.sp,
                       fontWeight: FontWeight.w600,
                       color: AppColors.themeColor),
                 ),
-                heightBox8,
+                heightBox4,
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
@@ -73,7 +73,7 @@ class EventItemCard extends StatelessWidget {
                     ),
                     Text(
                       'Julia’s Football Match!',
-                      style: GoogleFonts.outfit(
+                      style: GoogleFonts.notoSansMyanmar(
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xff5D5D5D)),
@@ -95,12 +95,12 @@ class EventItemCard extends StatelessWidget {
                         widthBox4,
                     Text(
                       'Going',
-                      style: GoogleFonts.outfit(
+                      style: GoogleFonts.notoSansMyanmar(
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xff5D5D5D)),
                     ),
-                    widthBox8,
+                    widthBox4,
                     CircleAvatar(
                         backgroundColor: Colors.red,
                         radius: 10.r,
@@ -111,8 +111,8 @@ class EventItemCard extends StatelessWidget {
                         )),
                         widthBox4,
                     Text(
-                      'Not intersted',
-                      style: GoogleFonts.outfit(
+                      'Not available',
+                      style: GoogleFonts.notoSansMyanmar(
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xff5D5D5D)),
@@ -120,7 +120,7 @@ class EventItemCard extends StatelessWidget {
                   ],
                 ),
                 heightBox4,
-                CommentInputField(cHeight: 44,)
+                CommentInputField(cHeight: 42,)
               ],
             ),
           ),

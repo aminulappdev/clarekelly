@@ -20,13 +20,13 @@ class CostumTitleRow extends StatelessWidget {
         Text(
           title,
           style:
-              GoogleFonts.outfit(fontSize: 20.sp, fontWeight: FontWeight.w700),
+              GoogleFonts.notoSansMyanmar(fontSize: 20.sp, fontWeight: FontWeight.w700),
         ),
         GestureDetector(
           onTap: ontap,
           child: Text(
             'See All',
-            style: GoogleFonts.outfit(
+            style: GoogleFonts.notoSansMyanmar(
                 fontSize: 16.sp,
                 fontWeight: FontWeight.w500,
                 decoration: TextDecoration.underline),

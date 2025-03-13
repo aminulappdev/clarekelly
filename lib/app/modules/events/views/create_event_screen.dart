@@ -107,7 +107,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                       },
                       child: Text(
                         'Create Event',
-                        style: GoogleFonts.outfit(
+                        style: GoogleFonts.notoSansMyanmar(
                           fontSize: 18.sp,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
@@ -163,7 +163,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         children: [
           Text(
             label,
-            style: GoogleFonts.outfit(
+            style: GoogleFonts.notoSansMyanmar(
                 fontSize: 16.sp, fontWeight: FontWeight.bold),
           ),
           SizedBox(height: 6.h),
@@ -203,7 +203,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         Text(
           'Upload Poster/Flyer',
           style:
-              GoogleFonts.outfit(fontSize: 16.sp, fontWeight: FontWeight.bold),
+              GoogleFonts.notoSansMyanmar(fontSize: 16.sp, fontWeight: FontWeight.bold),
         ),
         SizedBox(height: 6),
         GestureDetector(
@@ -229,7 +229,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                         size: 30.h, color: Colors.black54),
                     Text(
                       'Upload your poster/flyer',
-                      style: GoogleFonts.outfit(
+                      style: GoogleFonts.notoSansMyanmar(
                           fontSize: 14.sp, color: Colors.black54),
                     ),
                   ],

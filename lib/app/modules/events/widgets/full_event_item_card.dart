@@ -41,7 +41,7 @@ class FullEventItemCard extends StatelessWidget {
                   widthBox4,
                   Text(
                     'Md Aminul',
-                    style: GoogleFonts.outfit(fontSize: 12.sp),
+                    style: GoogleFonts.notoSansMyanmar(fontSize: 12.sp),
                   )
                 ],
               ),
@@ -50,13 +50,13 @@ class FullEventItemCard extends StatelessWidget {
               heightBox4,
               Text(
                 'Julia’s Football Match!',
-                style: GoogleFonts.outfit(
+                style: GoogleFonts.notoSansMyanmar(
                     fontSize: 12, fontWeight: FontWeight.w700),
               ),
               heightBox4,
               Text(
                 '31st Dec 2025 • 04:00 PM',
-                style: GoogleFonts.outfit(
+                style: GoogleFonts.notoSansMyanmar(
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
                     color: AppColors.themeColor),
@@ -71,7 +71,7 @@ class FullEventItemCard extends StatelessWidget {
                   ),
                   Text(
                     'Julia’s Football Match!',
-                    style: GoogleFonts.outfit(
+                    style: GoogleFonts.notoSansMyanmar(
                         fontSize: 12,
                         fontWeight: FontWeight.w500,
                         color: Color(0xff5D5D5D)),

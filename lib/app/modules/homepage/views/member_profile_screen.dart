@@ -53,12 +53,12 @@ class _MemberProfileScreenState extends State<MemberProfileScreen> {
               heightBox8,
               Text(
                 'Emily K.',
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.notoSansMyanmar(
                     fontSize: 20.sp, fontWeight: FontWeight.w700),
               ),
               Text(
                 'example@gmail.com',
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.notoSansMyanmar(
                     fontSize: 16.sp, fontWeight: FontWeight.w400),
               ),
               heightBox8,
@@ -81,7 +81,7 @@ class _MemberProfileScreenState extends State<MemberProfileScreen> {
                   child: Center(
                     child: Text(
                       'Events',
-                      style: GoogleFonts.poppins(
+                      style: GoogleFonts.notoSansMyanmar(
                           fontSize: 16.sp, fontWeight: FontWeight.w600),
                     ),
                   ),
@@ -124,12 +124,12 @@ class _MemberProfileScreenState extends State<MemberProfileScreen> {
           children: [
             Text(
               '100',
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.notoSansMyanmar(
                   fontSize: 16.sp, fontWeight: FontWeight.w600),
             ),
             Text(
               'Events created',
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.notoSansMyanmar(
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w600,
                   color: AppColors.themeColor),
@@ -145,12 +145,12 @@ class _MemberProfileScreenState extends State<MemberProfileScreen> {
           children: [
             Text(
               '25',
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.notoSansMyanmar(
                   fontSize: 16.sp, fontWeight: FontWeight.w600),
             ),
             Text(
               'Following',
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.notoSansMyanmar(
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w600,
                   color: AppColors.themeColor),
@@ -166,12 +166,12 @@ class _MemberProfileScreenState extends State<MemberProfileScreen> {
           children: [
             Text(
               '10M',
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.notoSansMyanmar(
                   fontSize: 16.sp, fontWeight: FontWeight.w600),
             ),
             Text(
               'Followers',
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.notoSansMyanmar(
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w600,
                   color: AppColors.themeColor),
@@ -187,7 +187,7 @@ class _MemberProfileScreenState extends State<MemberProfileScreen> {
       children: [
         Text(
           'Events will be shown when you follow this user.',
-          style: GoogleFonts.outfit(
+          style: GoogleFonts.notoSansMyanmar(
             fontSize: 20.sp,
             fontWeight: FontWeight.w500,
           ),

@@ -37,7 +37,7 @@ class _PeoplesScreenState extends State<PeoplesScreen> {
                     widthBox8,
                     Text(
                       'Aminul',
-                      style: GoogleFonts.outfit(
+                      style: GoogleFonts.notoSansMyanmar(
                           fontSize: 16.sp, fontWeight: FontWeight.w400),
                     ),
                   ],
@@ -46,22 +46,24 @@ class _PeoplesScreenState extends State<PeoplesScreen> {
                   children: [
                     Container(
                       height: 34.h,
-                      width: 80.w,
+                      width: 85.w,
                       decoration: BoxDecoration(
                         color: AppColors.themeColor,
                         borderRadius: BorderRadius.circular(8.r),
                       ),
                       child: Center(
                         child: Text(
-                          'Follow',
-                          style: GoogleFonts.outfit(
+                          'Add friend',
+                          style: GoogleFonts.notoSansMyanmar(
                               fontSize: 14.sp,
                               fontWeight: FontWeight.w400,
                               color: Colors.white),
                         ),
                       ),
                     ),
-                    Icon(Icons.close)
+                    Checkbox(value: false, onChanged: (value) {
+                      
+                    },)
                   ],
                 )
               ],

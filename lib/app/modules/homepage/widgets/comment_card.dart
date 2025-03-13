@@ -53,13 +53,13 @@ class CommentCard extends StatelessWidget {
                         
                         Text(
                           name,
-                          style: GoogleFonts.poppins(fontSize: 15,fontWeight: FontWeight.w700),
+                          style: GoogleFonts.notoSansMyanmar(fontSize: 15,fontWeight: FontWeight.w700),
                           ),
                         
                       
                         Text(
                           date,
-                          style: GoogleFonts.poppins(fontSize: 13,fontWeight: FontWeight.w400),
+                          style: GoogleFonts.notoSansMyanmar(fontSize: 13,fontWeight: FontWeight.w400),
                         ),
                       ],
                     ),

@@ -33,7 +33,7 @@ class _ChatDashboardScreenState extends State<ChatDashboardScreen> {
               children: [
                 Text(
                   'Chats',
-                  style: GoogleFonts.outfit(
+                  style: GoogleFonts.notoSansMyanmar(
                       fontSize: 20.sp, fontWeight: FontWeight.w600),
                 ),
                 GestureDetector(
@@ -55,7 +55,7 @@ class _ChatDashboardScreenState extends State<ChatDashboardScreen> {
             heightBox8,
             Text(
               'People you know',
-              style: GoogleFonts.outfit(
+              style: GoogleFonts.notoSansMyanmar(
                   fontSize: 16.sp, fontWeight: FontWeight.w600),
             ),
             UserActivitiesCircleIcon(
@@ -65,7 +65,7 @@ class _ChatDashboardScreenState extends State<ChatDashboardScreen> {
             heightBox8,
             Text(
               'Messages',
-              style: GoogleFonts.outfit(
+              style: GoogleFonts.notoSansMyanmar(
                   fontSize: 16.sp, fontWeight: FontWeight.w600),
             ),
             heightBox4,

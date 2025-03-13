@@ -43,7 +43,7 @@ class _EventDatailsScreenState extends State<EventDatailsScreen> {
                   children: [
                     Text(
                       'Julia’s Football Match!',
-                      style: GoogleFonts.outfit(
+                      style: GoogleFonts.notoSansMyanmar(
                           fontSize: 22.sp, fontWeight: FontWeight.w600),
                     ),
                     heightBox4,
@@ -78,19 +78,19 @@ class _EventDatailsScreenState extends State<EventDatailsScreen> {
               heightBox8,
               Text(
                 'Event Description',
-                style: GoogleFonts.outfit(
+                style: GoogleFonts.notoSansMyanmar(
                     fontSize: 18.sp, fontWeight: FontWeight.w600),
               ),
               heightBox4,
               Text(
                 DemoText.eventDescription,
-                style: GoogleFonts.outfit(
+                style: GoogleFonts.notoSansMyanmar(
                     fontSize: 16.sp, fontWeight: FontWeight.w300),
               ),
               heightBox4,
               Text(
                 'Organized By',
-                style: GoogleFonts.outfit(
+                style: GoogleFonts.notoSansMyanmar(
                     fontSize: 18.sp, fontWeight: FontWeight.w600),
               ),
               heightBox8,
@@ -103,7 +103,7 @@ class _EventDatailsScreenState extends State<EventDatailsScreen> {
                   widthBox4,
                   Text(
                     'Emily K.',
-                    style: GoogleFonts.outfit(
+                    style: GoogleFonts.notoSansMyanmar(
                         fontSize: 16.sp, fontWeight: FontWeight.w400),
                   )
                 ],
@@ -187,7 +187,7 @@ class _EventDatailsScreenState extends State<EventDatailsScreen> {
                 widthBox5,
             Text(
               'Going',
-              style: GoogleFonts.outfit(
+              style: GoogleFonts.notoSansMyanmar(
                   fontSize: 20.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xff5D5D5D)),
@@ -203,8 +203,8 @@ class _EventDatailsScreenState extends State<EventDatailsScreen> {
                 )),
                  widthBox5,
             Text(
-              'Not intersted',
-              style: GoogleFonts.outfit(
+              'Not available',
+              style: GoogleFonts.notoSansMyanmar(
                   fontSize: 20.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xff5D5D5D)),

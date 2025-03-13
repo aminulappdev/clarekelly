@@ -40,7 +40,7 @@ class PeopleCardWidget extends StatelessWidget {
             ),
             Text(
               'Emily K.',
-              style: GoogleFonts.outfit(
+              style: GoogleFonts.notoSansMyanmar(
                   fontSize: 14.sp, fontWeight: FontWeight.w500),
             ),
             heightBox4,
@@ -53,7 +53,7 @@ class PeopleCardWidget extends StatelessWidget {
               child: Center(
                 child: Text(
                   'Follow',
-                  style: GoogleFonts.outfit(
+                  style: GoogleFonts.notoSansMyanmar(
                       fontSize: 12.sp,
                       fontWeight: FontWeight.w600,
                       color: Colors.white),

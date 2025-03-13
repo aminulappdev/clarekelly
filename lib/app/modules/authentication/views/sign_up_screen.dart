@@ -95,7 +95,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             ),
             Text(
               'Agree with',
-              style: GoogleFonts.outfit(
+              style: GoogleFonts.notoSansMyanmar(
                   fontSize: 16.sp, fontWeight: FontWeight.w400),
             ),
           ],
@@ -105,7 +105,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           onTap: () {},
           child: Text(
             'Terms and Conditions.',
-            style: GoogleFonts.outfit(
+            style: GoogleFonts.notoSansMyanmar(
                 fontSize: 16.sp,
                 fontWeight: FontWeight.w400,
                 color: Color(0xff909090)),
@@ -187,12 +187,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
         Text(
           'Welcome Here!',
           style:
-              GoogleFonts.outfit(fontSize: 24.sp, fontWeight: FontWeight.w500),
+              GoogleFonts.notoSansMyanmar(fontSize: 24.sp, fontWeight: FontWeight.w500),
         ),
         heightBox4,
         Text(
           'Create An Account.',
-          style: GoogleFonts.outfit(
+          style: GoogleFonts.notoSansMyanmar(
               fontSize: 24.sp,
               color: AppColors.themeColor,
               fontWeight: FontWeight.w500),
@@ -201,7 +201,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         Text(
           'Fill in your information.',
           style:
-              GoogleFonts.outfit(fontSize: 14.sp, fontWeight: FontWeight.w500),
+              GoogleFonts.notoSansMyanmar(fontSize: 14.sp, fontWeight: FontWeight.w500),
         ),
       ],
     );

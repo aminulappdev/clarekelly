@@ -71,13 +71,13 @@ class SinglePersionNotification extends StatelessWidget {
               width: 180.w,
               child: Text(
                 'Celline, Kyedae, Nami and 2 others going to your event.',
-                style: GoogleFonts.outfit(
+                style: GoogleFonts.notoSansMyanmar(
                     fontSize: 14.sp, fontWeight: FontWeight.w400),
               )),
           widthBox8,
           Text(
             '1 min ago',
-            style: GoogleFonts.outfit(
+            style: GoogleFonts.notoSansMyanmar(
                 fontSize: 12.sp, fontWeight: FontWeight.w400),
           )
         ],

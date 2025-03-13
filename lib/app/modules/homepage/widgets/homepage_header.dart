@@ -31,7 +31,7 @@ class HomepageHeader extends StatelessWidget {
         ),
         Text(
           title,
-          style: GoogleFonts.outfit(
+          style: GoogleFonts.notoSansMyanmar(
               fontSize: 18, fontWeight: FontWeight.w600),
         ),
         GestureDetector(

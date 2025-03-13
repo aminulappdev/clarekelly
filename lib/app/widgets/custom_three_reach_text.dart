@@ -40,21 +40,21 @@ class CustomThreeRichText extends StatelessWidget {
       textAlign: TextAlign.center,
       text: TextSpan(
         text: mainText,
-        style: GoogleFonts.outfit(
+        style: GoogleFonts.notoSansMyanmar(
             fontSize: mainTextSize.sp,
             fontWeight: mainTextFontWeight,
             color: mainTextColor),
         children: [
           TextSpan(
             text: richText,
-            style: GoogleFonts.outfit(
+            style: GoogleFonts.notoSansMyanmar(
                 fontSize: richTextSize.sp,
                 fontWeight: richTextFontWeight,
                 color: richTextColor),
           ),
           TextSpan(
             text: secondRichText,
-            style: GoogleFonts.outfit(
+            style: GoogleFonts.notoSansMyanmar(
                 fontSize: secondRichTextSize.sp,
                 fontWeight: secondRichTextFontWeight,
                 color: secondRichTextColor),

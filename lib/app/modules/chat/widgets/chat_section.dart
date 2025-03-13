@@ -41,11 +41,11 @@ class ChatSection extends StatelessWidget {
                   children: [
                     Text(
                       'name',
-                      style: GoogleFonts.outfit(
+                      style: GoogleFonts.notoSansMyanmar(
                           fontSize: 16.sp, fontWeight: FontWeight.w500),
                     ),
                     Text('Hai, whats’up bro. hayu atuh hangout dei jang Sabrina',
-                        style: GoogleFonts.outfit(
+                        style: GoogleFonts.notoSansMyanmar(
                             fontSize: 12.sp, fontWeight: FontWeight.w400)),
                   ],
                 ),
@@ -55,7 +55,7 @@ class ChatSection extends StatelessWidget {
             Column(
               children: [
                 Text('1:20 pm',
-                    style: GoogleFonts.outfit(
+                    style: GoogleFonts.notoSansMyanmar(
                         fontSize: 10.sp, fontWeight: FontWeight.w500)),
                 heightBox8,
                 Icon(Icons.check),

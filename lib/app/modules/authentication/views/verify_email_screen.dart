@@ -104,7 +104,7 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
         heightBox4,
         Text(
           'Enter your email address to reset your password.',
-          style: GoogleFonts.outfit(
+          style: GoogleFonts.notoSansMyanmar(
               fontSize: 14.sp,
               color: const Color.fromARGB(255, 0, 0, 0),
               fontWeight: FontWeight.w500),

@@ -7,10 +7,10 @@ class ElevatedTheme {
   static ElevatedButtonThemeData elevatedButtonThemeData() {
     return ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        textStyle: GoogleFonts.outfit(fontSize: 24.sp, fontWeight: FontWeight.w500),
+        textStyle: GoogleFonts.notoSansMyanmar(fontSize: 24.sp, fontWeight: FontWeight.w500),
         backgroundColor: AppColors.themeColor,
         foregroundColor: Colors.white,
-        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16.r),
         ),

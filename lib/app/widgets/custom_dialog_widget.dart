@@ -46,7 +46,7 @@ class CustomShowDialog extends StatelessWidget {
               child: Text(
                 title,
                 textAlign: TextAlign.center,
-                style: GoogleFonts.urbanist(
+                style: GoogleFonts.notoSansMyanmar(
                   fontSize: 18.sp,
                   fontWeight: FontWeight.w600,
                   color: Colors.black,

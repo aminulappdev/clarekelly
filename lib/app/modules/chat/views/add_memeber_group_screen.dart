@@ -36,13 +36,13 @@ class _AddMembersGroupScreenState extends State<AddMembersGroupScreen> {
             Navigator.pop(context);
           },
         ),
-        title: Text("New Group",style: GoogleFonts.outfit(fontSize: 20.sp,fontWeight: FontWeight.w400),),
+        title: Text("New Group",style: GoogleFonts.notoSansMyanmar(fontSize: 20.sp,fontWeight: FontWeight.w400),),
         actions: [
           TextButton(
             onPressed: () {
               Navigator.pop(context);
             },
-            child: Text("Create", style: GoogleFonts.outfit(fontSize: 18.sp,fontWeight: FontWeight.w700,color: AppColors.themeColor),),
+            child: Text("Create", style: GoogleFonts.notoSansMyanmar(fontSize: 18.sp,fontWeight: FontWeight.w700,color: AppColors.themeColor),),
           ),
         ],
       ),
@@ -147,7 +147,7 @@ class _AddMembersGroupScreenState extends State<AddMembersGroupScreen> {
                       backgroundImage: AssetImage(AssetsPath.imagefootballKid),
                       radius: 25.r,                 
                     ),
-                    title: Text(person,style: GoogleFonts.outfit(fontSize: 16.sp,fontWeight: FontWeight.w500),),
+                    title: Text(person,style: GoogleFonts.notoSansMyanmar(fontSize: 16.sp,fontWeight: FontWeight.w500),),
                     trailing: Checkbox(
                       value: selectedPeople[person] ?? false,
                       onChanged: (bool? isChecked) {

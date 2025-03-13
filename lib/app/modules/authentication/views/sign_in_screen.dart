@@ -56,7 +56,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       },
                       child: Text(
                         'Forgot password?',
-                        style: GoogleFonts.outfit(
+                        style: GoogleFonts.notoSansMyanmar(
                             fontSize: 18.sp,
                             fontWeight: FontWeight.w500,
                             color: Color.fromARGB(255, 0, 0, 0)),
@@ -107,7 +107,7 @@ class _SignInScreenState extends State<SignInScreen> {
         Text(
           'Remember me',
           style:
-              GoogleFonts.outfit(fontSize: 16.sp, fontWeight: FontWeight.w400),
+              GoogleFonts.notoSansMyanmar(fontSize: 16.sp, fontWeight: FontWeight.w400),
         ),
       ],
     );
@@ -158,12 +158,12 @@ class _SignInScreenState extends State<SignInScreen> {
         Text(
           'Welcome Back!',
           style:
-              GoogleFonts.outfit(fontSize: 24.sp, fontWeight: FontWeight.w500),
+              GoogleFonts.notoSansMyanmar(fontSize: 24.sp, fontWeight: FontWeight.w500),
         ),
         heightBox4,
         Text(
           'Let\'s Sign In.',
-          style: GoogleFonts.outfit(
+          style: GoogleFonts.notoSansMyanmar(
               fontSize: 24.sp,
               color: AppColors.themeColor,
               fontWeight: FontWeight.w500),

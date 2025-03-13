@@ -27,7 +27,7 @@ class SmallElevatedButton extends StatelessWidget {
         child: Center(
           child: Text(
             name,
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.notoSansMyanmar(
                 fontSize: 16.sp,
                 fontWeight: FontWeight.w500,
                 color: textColor),

@@ -39,7 +39,7 @@ class OnboardingPage extends StatelessWidget {
               },
               child: Text(
                 'Skip',
-                style: GoogleFonts.outfit(
+                style: GoogleFonts.notoSansMyanmar(
                   fontSize: 20.sp,
                   fontWeight: FontWeight.w400,
                 ),
@@ -70,7 +70,7 @@ class OnboardingPage extends StatelessWidget {
           heightBox20,
           Text(
             title,
-            style: GoogleFonts.outfit(
+            style: GoogleFonts.notoSansMyanmar(
               fontSize: 20.sp,
               fontWeight: FontWeight.w700,
             ),
@@ -79,7 +79,7 @@ class OnboardingPage extends StatelessWidget {
           heightBox20,
           Text(
             subtitle,
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.notoSansMyanmar(
               fontSize: 16.sp,
               fontWeight: FontWeight.w500,
             ),

@@ -132,7 +132,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         heightBox4,
         Text(
           'Fill in your information.',
-          style: GoogleFonts.outfit(
+          style: GoogleFonts.notoSansMyanmar(
               fontSize: 14.sp,
               color: const Color.fromARGB(255, 0, 0, 0),
               fontWeight: FontWeight.w500),

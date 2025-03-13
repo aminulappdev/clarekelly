@@ -68,7 +68,7 @@ class _EventBarScreenState extends State<EventBarScreen> with SingleTickerProvid
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.add,color: AppColors.themeColor,),
-                    Text('Create Event',style: GoogleFonts.outfit(fontSize: 24,fontWeight: FontWeight.w500,color: AppColors.themeColor),)
+                    Text('Create Event',style: GoogleFonts.notoSansMyanmar(fontSize: 24,fontWeight: FontWeight.w500,color: AppColors.themeColor),)
                   ],
                 ),),
               ),
